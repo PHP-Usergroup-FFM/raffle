@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <img src="img/phpuglogo_website.png" alt="phpugffm_logo" title="phpugffm_logo" />
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+                <article>
+                    <header>
+                        <h1>Jetbrains Gewinnspiel</h1>
+                    </header>
+                    <section class="centered">
+                        <h2>Eingabe der Teilnehmer:</h2>
+                        <form id="attendee_form" action="javascript:void(0)" method="post">
+                            <div class="attendee_row">
+                                <label>Teilnehmername:</label>
+                                <input type="text" name="attendee" value="" />
+                                <a class="btn btn-success add_attendee" href="javascript:void(0)">
+                                    <i class="icon-plus icon-large"></i>
+                                </a>
+                            </div>
+                        </form>
+                    </section>
+                    <section class="centered">
+                        <a href="javascript:void(0)" class="btn btn-large btn-primary" rel="raffle">
+                            <i class="icon-magic icon-large"></i> Auslosen
+                        </a>
+                    </section>
+                </article>
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper"></footer>
+        </div>
+
+        <div id="winner_dialog" class="modal hide fade">
+            <div class="modal-body centered">
+                <h3>Und der Gewinner ist: </h3>
+                <h2 id="winner">ich</h2>
+            </div>
+            <div class="modal-footer">
+                <a href="javascript:void(0)" class="btn btn-primary">Herzlichen Glückwunsch !!!</a>
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootbox.min.js"></script>
+        <script src="js/alea.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
